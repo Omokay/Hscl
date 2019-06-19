@@ -45,7 +45,7 @@ header {
     position: fixed;
     float: left;
     margin: 16px 46px;
-    color: #fff;
+    color: teal;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
@@ -68,10 +68,11 @@ nav ul {
     margin: 0;
     padding-right: 40px;
     transition: 1s;
-}
+} 
 
 nav.white ul {
     background: #fff;
+    color: white;
 }
 
 nav ul li {
@@ -81,7 +82,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 16px;
 }
 
@@ -93,7 +94,7 @@ nav ul li a {
     box-sizing: border-box;
     padding: 15px 24px;
     cursor: pointer;
-    color: #fff;
+    color: teal;
     display: none;
 }
 
