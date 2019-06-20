@@ -67,6 +67,7 @@ nav ul {
 nav.white ul {
     background-color: #fff;
     color: teal;
+    list-style: none;
 }
 
 nav ul li {
@@ -81,7 +82,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(127, 139, 139);
+    border-bottom: 3px solid #51F261; 
+    text-decoration: none;
 }
 
 .menu-icon {
@@ -104,9 +106,41 @@ nav ul li a:hover {
   
 #about {
     width: 100%;
-    height: 100vh;
-    padding: 0;
-    background-color: rgb(182, 195, 252);
+    height: auto;
+    padding: 20px 10px;
+    background-color: #FDFDFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-text {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1em;
+    line-height: 2.5;
+    word-spacing:  1;
+    color: #305250;
+
+
+}
+
+p > .hscl-bold {
+    color: #51F261;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    font-weight: 500;
+    padding: 20px;
+    color: teal;
+}
+
+h1 > .underline {
+    border-bottom: 3px solid #51F261;
 }
 
 .row > div{
