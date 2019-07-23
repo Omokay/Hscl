@@ -13,6 +13,10 @@ url('./assets/images/hero2.jpg');
     background-attachment: fixed;
     z-index: -1;
   } */
+  
+.item img {
+    display: block;
+}
 
 html,
 body {
