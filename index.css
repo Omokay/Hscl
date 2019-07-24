@@ -14,8 +14,12 @@ url('./assets/images/hero2.jpg');
     z-index: -1;
   } */
   
-.item img {
-    display: block;
+.item {
+    display: inline-block;
+}
+
+.client-header {
+    margin-bottom: 20px;
 }
 
 html,
@@ -30,16 +34,6 @@ body {
     font-weight: lighter;
 }
 
-header {
-    width: 100%;
-    position: absolute;
-    z-index: 11;
-}
-
-header .sticky {
-    background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
-    position: fixed;
-}
 
 .slider-area {
     width: 100%;
@@ -52,16 +46,9 @@ header .sticky {
     background-attachment: fixed;
 }
 
-.main-main-menu {}
-
 .logo {
     margin-top: 18px;
     transition: all 0.3s ease 0s;
-}
-
-.sticky .logo {
-    margin-top: 3px;
-    color: #fff;
 }
 
 .logo a {
@@ -70,23 +57,6 @@ header .sticky {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.main-menu ul {}
-
-.main-menu ul li {}
-
-.main-menu ul li a {
-    color: #444444;
-    display: block;
-    font-weight: 700;
-    padding: 30px 20px;
-    text-transform: uppercase;
-}
-
-.sticky .main-menu ul li a {
-    padding: 15px 20px;
-    color: #fff;
 }
 
 .single-slider {
@@ -105,57 +75,7 @@ header .sticky {
     vertical-align: middle;
 }
 
-
-/* #about {
-    width: 100%;
-    height: auto;
-    padding: 20px 10px;
-    background-color: #FDFDFF;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#about-text {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1em;
-    line-height: 2.5;
-    text-align: center;
-    word-spacing: 1;
-    color: #305250;
-}
-
-p>.hscl-bold {
-    color: #51F261;
-    font-size: 1.5em;
-}
-
-h1 {
-    font-size: 2.5rem;
-    line-height: 1.25;
-    font-weight: 500;
-    padding: 20px;
-    color: teal;
-}
-
-h1>.underline {
-    border-bottom: 3px solid #51F261;
-}
-
-.row>div {
-    position: inherit;
-} */
-
-
-/* second about section */
-
-#about-section {
-    padding: 20px;
-}
-
-.cta-big-image>.container {
+.cta-big-image >.container {
     position: relative;
 }
 
@@ -609,7 +529,7 @@ textarea:focus {
 /* Footer */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
+#footer {
     padding: 60px 0;
 }
 
