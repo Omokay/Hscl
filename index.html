@@ -23,71 +23,56 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Services</a>
-                    <a class="nav-item nav-link" href="#">Team</a>
-                    <a class="nav-item nav-link" href="#">Partners</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                </div>
-            </div>
-        </nav>
-        <!-- <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top top-nav">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="./index.html">
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Contact</a></li>
+                <a class="navbar-brand" href="#"><strong>HSCL</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav> -->
+        </nav>
     </header>
     <!-- HERO SECTION -->
-    <section class="hero-section">
-        <div class="slider-area">
-            <div class="single-slider">
-                <div class="slider-title">
-                    <div class="table-cell">
-                        <h2>Health Systems Consult Limited</h2>
-                        <p>HSCL is a health and development consulting firm dedicated to providing cutting edge
-                            solutions to the health and development ecosystem.</p>
-                    </div>
+    <section id="hero-section">
+        <div class="overlay"></div>
+        <div class="hero container-fluid">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h1>Health Systems Consult Limited</h1>
+                    <p>HSCL is a health and development consulting firm dedicated to providing cutting 
+                        solutions to the health and development ecosystem.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section>
-        <div id="hero" class="container-fluid">
 
-        </div>
-    </section> -->
-    
-    <!-- About Section-->
+    <!-- About Section -->
     <section id="about-section">
-        <div class="site-section cta-big-image" id="about-section">
+        <div class="site-section cta-big-image pb-100">
             <div class="container">
                 <img src="https://ik.imagekit.io/bn1u7wfqt/ad_nw6nqZg1q.jpg" alt="Image" class="img-fluid">
                 <div class="img-box">
@@ -109,7 +94,6 @@
             <div class="row">
                 <div class="col-xl-6 mx-auto text-center">
                     <div class="section-title mb-100">
-                        <p>services</p>
                         <h4>What we do</h4>
                     </div>
                 </div>
@@ -178,7 +162,7 @@
 
 
     <!-- PARTNERS SECTION -->
-    <section>
+    <section class="pt-100 pb-50">
         <div class="container">
             <div class="row client-header">
                 <div class="col-md-8 mx-auto text-center">
