@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -22,14 +22,16 @@ body {
 }
 
 .top-nav .navbar-nav li .nav-link {
-    color: #fff;
-    font-size: 14px;
+    color: #18ec9a;
+    font-size: 16px;
     padding: 29px 15px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     transition: 0.5s ease-in;
     -webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
+    font-family: 'BebasNeueRegular', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .top-nav li a.nav-link:hover,
@@ -42,8 +44,8 @@ body {
 
 .top-nav .navbar-brand {
     font-size: 28px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    color: #106ee8;
+    font-family: 'BebasNeueRegular', sans-serif;
 }
 
 .top-nav.light-header {
@@ -76,8 +78,9 @@ body {
 }
 
 .hero {
-    background-image: url('./assets/images/hero2.jpg');
+    background-image: url('https://ik.imagekit.io/bn1u7wfqt/francisco-venancio-M4Xloxsg0Gw-unsplash_EcL-sOT5H.jpg');
     background-size: cover;
+    background-attachment: fixed;
     float: left;
     width: 100%;
     display: flex;
@@ -85,7 +88,7 @@ body {
     height: 100vh;
     position: relative;
     z-index: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'BebasNeueRegular', sans-serif;
 }
 
 .bg-overlay-light:before {
@@ -101,11 +104,16 @@ body {
 
 .hero h2 {
     font-size: 3.5em;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 118px;
+    text-transform: none;
+    color: #106ee8;
+}
+
+.hero h2 span {
     color: #18ec9a;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: 'BebasNeueRegular';
 }
 
 .hero p {
@@ -113,6 +121,19 @@ body {
     font-size: 1.3em;
     font-weight: 500;
 }
+
+.hero i.fas {
+    width: 100px;
+    height: 100px;
+    color: #18ec9a;
+}
+
+.hero .row .pointer {
+    padding-top: 100px;
+}
+
+
+/* ABOUT SECTION */
 
 .page-section {
     padding-top: 5rem;
@@ -130,10 +151,14 @@ body {
 }
 
 .section-heading .section-heading-lower {
-    display: block;
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0.1em;
     color: #18ec9a;
+    display: inline-block;
+    font-family: 'BebasNeueRegular', sans-serif;
+    ;
 }
 
 .bg-faded {
@@ -173,9 +198,7 @@ body {
 }
 
 
-/* ABOUT SECTION */
-
-.about-section {
+/* .about-section {
     float: left;
     width: 100%;
     padding: 5rem 0;
@@ -234,6 +257,7 @@ body {
 .cta-big-image .img-box *:last-child {
     margin-bottom: 0;
 }
+ */
 
 
 /** What we do css */
@@ -255,7 +279,6 @@ body {
 }
 
 .services {
-    font-family: 'Montserrat', sans-serif;
     background-color: #f7fafc;
     float: left;
     width: 100%;
@@ -265,11 +288,18 @@ body {
 
 .services .single-service p {
     text-align: left !important;
-    color: #3e415e;
+    color: #020f45;
+    font-family: basier_circlebold, sans-serif;
 }
 
 .services .single-service h5 {
-    color: #071e57;
+    font-family: basier_circlebold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #020f45 !important;
 }
 
 
@@ -292,10 +322,11 @@ body {
     z-index: 1;
 }
 
-.team-section .section-title h3 {
+
+/* .team-section .section-title h3 {
     position: relative;
     padding-bottom: 30px;
-}
+} */
 
 .team-section .section-title p {
     font-size: 15px;
@@ -325,7 +356,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    color: #000;
+    color: #0b2872;
     position: relative;
 }
 
@@ -334,7 +365,7 @@ body {
     content: '';
     width: 30px;
     height: 1px;
-    background: #777777;
+    background: #106ee8;
     bottom: -8px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -343,41 +374,24 @@ body {
 
 .team-section .team-member .contents .btn-main {
     margin-top: 30px;
-    background: #fff;
+    background: #fafbfc;
     text-transform: uppercase;
-    color: #48bdc5;
+    color: #106ee8;
     padding: 10px 25px;
-    border: 1px solid #48bdc5;
+    border: 1px solid #106ee8;
     transition: all .2s ease-in;
 }
 
 .team-section .team-member .contents .btn-main:hover {
-    background: #48bdc5;
-    color: #fff;
+    background: #106ee8;
+    color: #fafbfc;
 }
 
-.team-members .team-person {
-    margin-top: 30px;
-}
-
-.team-members .team-person img {
-    border-radius: 5px;
-    width: 100%;
-}
-
-.team-members .team-person h6 {
-    margin-top: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #000;
-}
-
-.team-members .team-person p {
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+.team-section .team-member .contents .role {
+    font-size: 15px;
+    font-weight: 600;
+    color: #106ee8;
+    font-family: basier_circlebold, sans-serif;
 }
 
 
@@ -398,15 +412,17 @@ a {
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: 400;
+    font-family: 'ubuntu', sans-serif;
 }
 
 .section-title h4 {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
-    text-transform: capitalize;
     position: relative;
     padding-bottom: 20px;
     display: inline-block;
+    letter-spacing: 0.1em;
+    font-family: 'BebasNeueRegular', 'Ubuntu', sans-serif;
 }
 
 .section-title h4::before {
@@ -433,7 +449,7 @@ a {
 }
 
 .contact {
-    background-image: url("http://infinityflamesoft.com/html/abal-preview/assets/img/contact_back.jpg");
+    background-image: url("https://ik.imagekit.io/bn1u7wfqt/thomas-drouault-IBUcu_9vXJc-unsplash_ugu7UEXBs.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -462,9 +478,9 @@ textarea {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #333;
+    background-color: #020f45;
     z-index: -1;
-    opacity: .85;
+    opacity: 0.6;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
 }
 
@@ -485,9 +501,13 @@ i.fa {
 }
 
 .single-contact h5 {
+    font-family: basier_circlebold, sans-serif;
     font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #106ee8;
 }
 
 .single-contact p {
