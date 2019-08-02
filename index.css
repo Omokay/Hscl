@@ -302,6 +302,17 @@ body {
     color: #020f45 !important;
 }
 
+.services i.fas {
+    color: #18ec9a;
+    margin-bottom: 10px;
+}
+
+.services .single-service {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+}
+
 
 /* Partner Section */
 
@@ -344,6 +355,7 @@ body {
 }
 
 .team-section .team-member img {
+    display: block;
     width: 100%;
 }
 
@@ -463,7 +475,7 @@ a {
 .contact-form input,
 textarea {
     width: 100%;
-    border: 1px solid #555;
+    border: 1px solid rgb(85, 85, 85);
     padding: 5px 10px;
     text-transform: capitalize;
     margin-top: 15px;
@@ -492,22 +504,24 @@ textarea {
     margin-top: 10px;
 }
 
-i.fa {
+.single-contact i.fa {
+    position: absolute;
     left: 0;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #18ec9a;
     width: 40px;
     height: 40px;
-    color: #18ec9a;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .single-contact h5 {
-    font-family: basier_circlebold, sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: normal;
-    text-transform: none;
-    color: #106ee8;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .single-contact p {
@@ -525,24 +539,12 @@ i.fa {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #0c754d
+    background-color: #15ca85;
 }
 
 .contact-form input:focus,
 textarea:focus {
-    border-color: #0c754d
-}
-
-
-/* Footer */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-#footer {
-    padding: 60px 0;
-    position: relative;
-    z-index: 1;
-    float: left;
-    width: 100%;
+    border-color: #0b2872;
 }
 
 section .section-title {
@@ -552,7 +554,14 @@ section .section-title {
     text-transform: uppercase;
 }
 
+
+/* Footer */
+
 #footer {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 100%;
     background: #020f45 !important;
 }
 
