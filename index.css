@@ -5,6 +5,7 @@
     --neutral: #8384ac;
     --gray: #44485e;
     --highlight: #18ec9a;
+    --light: #ccfae8af;
     --secondary: #0c084c;
     --accent: #ffab00;
     --white: #fff;
@@ -165,16 +166,17 @@ body {
     vertical-align: middle;
     text-align: center;
     text-decoration: none !important;
-    color: var(--white);
+    color: var(--nudeblue);
     cursor: pointer;
     border: 0 solid transparent;
-    background: var(--secondary);
+    background: var(--blue);
     -webkit-transition: .5s ease-in;
     transition: .5s ease-in;
 }
 
 .hero-btn:hover {
-    color: var(--nudeblue);
+    background: var(--secondary);
+    color: var(--white);
 }
 
 h2 span {
@@ -251,9 +253,7 @@ background: rgba(188,
     font-weight: 500;
     font-size: 0.8rem;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 20px;
     border-radius: 0;
     border: none;
     background: var(--white);
@@ -261,7 +261,10 @@ background: rgba(188,
     transition: 0.5s ease-in;
 }
 
-.btn-xl:hover {}
+.btn-xl:hover {
+    color: var(--nudeblue);
+    background: var(--blue);
+}
 
 
 /* 
@@ -294,7 +297,7 @@ background: rgba(188,
     width: 100%;
     position: relative;
     z-index: 1;
-    background: #fff;
+    background-image: url('https://ik.imagekit.io/bn1u7wfqt/background_Xeh8hxLZ2.png');
 }
 
 .about-section .row {
@@ -367,9 +370,9 @@ background: rgba(188,
 }
 
 .services .single-service h5 {
-    font-size: 1.29em;
+    font-size: 1.0em;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: normal;
     text-align: left;
     text-transform: none;
@@ -379,7 +382,7 @@ background: rgba(188,
 
 .services i.fas {
     color: var(--accent);
-    margin: 10px 0;
+    margin-bottom: 10px;
     font-size: 25px;
 }
 
@@ -428,7 +431,7 @@ background: rgba(188,
     align-items: center;
     position: relative;
     height: 40px;
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: .036em;
     vertical-align: middle;
@@ -440,6 +443,10 @@ background: rgba(188,
     -ms-flex-align: center;
     -webkit-transition: .5s ease-in;
     transition: .5s ease-in;
+}
+
+.portfolio a.btn-portfolio:hover {
+    color: var(--secondary);
 }
 
 .portfolio a.project-title {
@@ -461,7 +468,6 @@ background: rgba(188,
     padding: 0 20px;
     height: 50px;
     font-size: 16px;
-    font-weight: 500;
     letter-spacing: .036em;
     line-height: 64px;
     vertical-align: middle;
@@ -470,7 +476,7 @@ background: rgba(188,
     color: var(--white);
     cursor: pointer;
     border: 0 solid transparent;
-    background: var(--secondary);
+    background: var(--blue);
     -webkit-transition: .5s ease-in;
     transition: .5s ease-in;
 }
@@ -487,15 +493,11 @@ background: rgba(188,
 }
 
 .bg-well {
-    background: var(--white);
+    background: var(--light);
 }
 
 
 /* Partner Section */
-
-.section-team {
-    background-color: var(--plain);
-}
 
 .partner-section {
     float: left;
@@ -507,12 +509,16 @@ background: rgba(188,
 
 /* CSS for Team section */
 
+.section-team {
+    background-color: var(--plain);
+}
+
 .team-well {
     height: 280px !important;
 }
 
 .team-role {
-    color: var(--highlight) !important;
+    color: var(--accent) !important;
 }
 
 
@@ -535,9 +541,15 @@ a {
     font-weight: 400;
 }
 
+section .section-title {
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
 .section-title h4 {
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.25em;
+    font-weight: 700;
     position: relative;
     padding-bottom: 20px;
     display: inline-block;
@@ -545,7 +557,8 @@ a {
     color: var(--secondary);
 }
 
-.section-title h4::before {
+
+/* .section-title h4::before {
     position: absolute;
     content: "";
     width: 80px;
@@ -566,7 +579,7 @@ a {
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-}
+} */
 
 .contact {
     background-image: url("https://ik.imagekit.io/bn1u7wfqt/thomas-drouault-IBUcu_9vXJc-unsplash_ugu7UEXBs.jpg");
@@ -602,8 +615,7 @@ textarea {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgb(10, 4, 27);
-    ;
+    background-color: rgba(35, 3, 131, 0.336);
     z-index: -1;
     opacity: 0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
@@ -658,13 +670,6 @@ textarea {
 .contact-form input:focus,
 textarea:focus {
     border-color: var(--accent);
-}
-
-section .section-title {
-    text-align: center;
-    color: var(--primary);
-    margin-bottom: 50px;
-    text-transform: uppercase;
 }
 
 
