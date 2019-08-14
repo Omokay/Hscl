@@ -5,13 +5,17 @@
     --neutral: #8384ac;
     --gray: #44485e;
     --highlight: #18ec9a;
-    --secondary: #010059;
+    --secondary: #0c084c;
+    --accent: #ffab00;
     --white: #fff;
     --nudeblue: #e9f0fa;
+    --plain: #fafbfd;
 }
 
 .item {
     display: inline-block;
+    width: 100px;
+    height: 100px;
 }
 
 h1,
@@ -113,7 +117,7 @@ body {
 
 .bg-overlay-light:before {
     content: "";
-    background: rgba(18, 47, 151, 0.5);
+    background: rgba(18, 47, 151, 0.8);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -137,7 +141,7 @@ body {
 }
 
 .hero i.fas {
-    width: 100px;
+    width: 200px;
     height: 100px;
     color: var(--gray);
 }
@@ -164,20 +168,51 @@ body {
     color: var(--white);
     cursor: pointer;
     border: 0 solid transparent;
-    background: #222;
+    background: var(--secondary);
     -webkit-transition: .5s ease-in;
     transition: .5s ease-in;
 }
 
 .hero-btn:hover {
-    background: var(--primary);
     color: var(--nudeblue);
+}
+
+h2 span {
+    color: var(--highlight);
+}
+
+.section-team {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
 }
 
 
 /* ABOUT SECTION */
 
-.page-section {
+
+/* .page-section {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: var(--white);
@@ -202,9 +237,15 @@ body {
 }
 
 .bg-faded {
-    /* background-color: var(--primary); */
-    background: rgba(188, 184, 247, 0.8);
+    background-color: var(--primary);
+
+background: rgba(188,
+184,
+247,
+0.8);
+
 }
+*/
 
 .btn-xl {
     font-weight: 500;
@@ -215,21 +256,21 @@ body {
     padding-right: 2rem;
     border-radius: 0;
     border: none;
-    background: #222;
-    color: var(--white);
+    background: var(--white);
+    color: var(--secondary);
     transition: 0.5s ease-in;
 }
 
-.btn-xl:hover {
-    background: var(--primary);
-    color: var(--white);
-}
+.btn-xl:hover {}
 
+
+/* 
 .intro {
     position: relative;
-}
+} */
 
-@media (min-width: 992px) {
+
+/* @media (min-width: 992px) {
     .intro .intro-img {
         width: 75%;
         float: right;
@@ -246,6 +287,39 @@ body {
         position: absolute;
         bottom: -2rem;
     }
+} */
+
+.about-section {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+.about-section .row {
+    color: var(--gray);
+}
+
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about-text {
+    padding: 20px 50px;
+}
+
+.about-well {
+    background: #3540b6;
+    color: #fff;
+}
+
+.abt-subheader {
+    font-size: 1.9em;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+    color: var(--highlight);
 }
 
 
@@ -259,8 +333,12 @@ body {
     padding-top: 40px;
 }
 
-.pt-200 {
-    padding-top: 200px;
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 .pb-100 {
@@ -284,23 +362,25 @@ body {
 }
 
 .services .single-service p {
-    text-align: center !important;
+    text-align: left !important;
     color: var(--gray);
 }
 
 .services .single-service h5 {
-    font-size: 1.17em;
+    font-size: 1.29em;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     text-transform: none;
-    color: var(--primary) !important;
+    color: var(--secondary) !important;
+    font-family: 'Merriweather', serif;
 }
 
 .services i.fas {
-    color: var(--primary);
+    color: var(--accent);
     margin: 10px 0;
+    font-size: 25px;
 }
 
 .services .single-service {
@@ -310,7 +390,112 @@ body {
 }
 
 
+/* Portfolio Section */
+
+.portfolio {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: var(--white);
+}
+
+.portfolio strong {
+    color: var(--blue) !important;
+    font-size: 1.2em;
+}
+
+.portfolio h6 a {
+    color: var(--secondary);
+}
+
+.portfolio p {
+    color: var(--gray) !important;
+}
+
+.portfolio .card {
+    border: none !important;
+    border-radius: 0 !important;
+    height: 250px;
+}
+
+.portfolio-img {
+    width: 280px !important;
+}
+
+.portfolio a.btn-portfolio {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .036em;
+    vertical-align: middle;
+    text-decoration: none !important;
+    color: var(--accent);
+    cursor: pointer;
+    border-radius: 0 !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-transition: .5s ease-in;
+    transition: .5s ease-in;
+}
+
+.portfolio a.project-title {
+    font-size: 20px !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.portfolio a.btn-portfolio:hover {
+    color: var(--secondary);
+}
+
+.portfolio a.link-projects {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .036em;
+    line-height: 64px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none !important;
+    color: var(--white);
+    cursor: pointer;
+    border: 0 solid transparent;
+    background: var(--secondary);
+    -webkit-transition: .5s ease-in;
+    transition: .5s ease-in;
+}
+
+.social-card-header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 96px;
+}
+
+.bg-well {
+    background: var(--white);
+}
+
+
 /* Partner Section */
+
+.section-team {
+    background-color: var(--plain);
+}
 
 .partner-section {
     float: left;
@@ -322,92 +507,12 @@ body {
 
 /* CSS for Team section */
 
-.team-section {
-    float: left;
-    width: 100%;
-    position: relative;
-    z-index: 1;
+.team-well {
+    height: 280px !important;
 }
 
-.team-section .section-title p {
-    font-size: 15px;
-    line-height: 26px;
-    color: #777777;
-    font-weight: 400;
-    padding-bottom: 30px;
-}
-
-.team-section .team-member {
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.team-section .team-member:hover {
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
-}
-
-.team-section .team-member img {
-    display: block;
-    width: 100%;
-    height: 304.16px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: var(--secondary);
-}
-
-.team-section .team-member .contents {
-    background: #fff;
-    padding: 20px 10px;
-}
-
-.team-section .team-member .contents h5 {
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    color: var(--primary);
-    position: relative;
-}
-
-.team-section .team-member .contents h5:before {
-    position: absolute;
-    content: '';
-    width: 30px;
-    height: 1px;
-    background: var(--secondary);
-    bottom: -8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.team-section .team-member .contents .btn-rm {
-    margin-top: 20px;
-    background: #fafbfc;
-    text-transform: uppercase;
-    color: var(--primary);
-    padding: 10px 25px;
-    border: 1px solid var(--primary);
-    transition: all .2s ease-in;
-}
-
-.team-section .team-member .contents .btn-rm:hover {
-    background: var(--secondary);
-    color: #fafbfc;
-}
-
-.team-section .team-member .contents .role {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--secondary);
+.team-role {
+    color: var(--highlight) !important;
 }
 
 
@@ -431,22 +536,21 @@ a {
 }
 
 .section-title h4 {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 600;
     position: relative;
     padding-bottom: 20px;
     display: inline-block;
     letter-spacing: 0.1em;
-    color: #222;
+    color: var(--secondary);
 }
 
-
-/* .section-title h4::before {
+.section-title h4::before {
     position: absolute;
     content: "";
     width: 80px;
     height: 2px;
-    background-color: var(--highlight);
+    background-color: var(--nudeblue);
     bottom: 0;
     left: 50%;
     margin-left: -40px;
@@ -457,12 +561,12 @@ a {
     content: "";
     width: 50px;
     height: 2px;
-    background-color: var(--highlight);
+    background-color: var(--nudeblue);
     left: 0;
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-} */
+}
 
 .contact {
     background-image: url("https://ik.imagekit.io/bn1u7wfqt/thomas-drouault-IBUcu_9vXJc-unsplash_ugu7UEXBs.jpg");
@@ -476,10 +580,14 @@ a {
     color: #fff;
 }
 
+.contact .section-title h4 {
+    color: var(--white);
+}
+
 .contact-form input,
 textarea {
     width: 100%;
-    border: 1px solid rgb(85, 85, 85);
+    border: 1px solid rgb(69, 56, 107);
     padding: 5px 10px;
     text-transform: capitalize;
     margin-top: 15px;
@@ -494,7 +602,8 @@ textarea {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #ebeefc;
+    background-color: rgb(10, 4, 27);
+    ;
     z-index: -1;
     opacity: 0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
@@ -514,7 +623,7 @@ textarea {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: var(--secondary);
+    background-color: var(--highlight);
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -534,7 +643,7 @@ textarea {
 }
 
 .contact-form input[type="submit"] {
-    background-color: var(--secondary);
+    background-color: var(--highlight);
     border: 0px;
     cursor: pointer;
     font-size: 16px;
@@ -542,13 +651,13 @@ textarea {
     transition: .4s
 }
 
-.contact-form input[type="submit"]:hover {
-    background-color: var(--secondary);
-}
+
+/* .contact-form input[type="submit"]:hover {
+} */
 
 .contact-form input:focus,
 textarea:focus {
-    border-color: var(--primary);
+    border-color: var(--accent);
 }
 
 section .section-title {
@@ -567,7 +676,7 @@ section .section-title {
     float: left;
     width: 100%;
     color: var(--nudeblue);
-    background: var(--secondary) !important;
+    background: #0c084c !important;
 }
 
 #footer h5 {
