@@ -1,17 +1,22 @@
- $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-            });
-      });
+$(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false
+    });
+});
 
-      // Scrolling Effect
+// Sticky Header
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
 
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('white');
-            }
-
-            else {
-                  $('nav').removeClass('white');
-            }
-      })
+    if (scroll >= 100) {
+        $(".top-nav").addClass("light-header");
+    } else {
+        $(".top-nav").removeClass("light-header");
+    }
+});
