@@ -41,7 +41,9 @@ $(window).scroll(function() {
 
     if (scroll >= 100) {
         $(".top-nav").addClass("light-header");
+        $(".navbar-toggler-icon").add("lightup");
     } else {
         $(".top-nav").removeClass("light-header");
+        $(".navbar-toggler-icon").removeClass("lightup");
     }
 });
