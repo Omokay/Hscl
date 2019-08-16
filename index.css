@@ -50,7 +50,7 @@ body {
 }
 
 .top-nav .navbar-nav li .nav-link {
-    color: var(--white);
+    color: var(--highlight);
     font-size: 14px;
     padding: 29px 15px;
     font-weight: 200;
@@ -100,12 +100,12 @@ body {
     color: var(--secondary);
 }
 
-.navbar-toggler .navbar-toggler-icon {
+.fa .fa-bars {
     color: var(--white);
 }
 
-.navbar-toggler .navbar-toggler-icon .lightup {
-    color: var(--primary);
+.fa .fa-bars .lightup {
+    background: var(--primary);
 }
 
 .isDisabled {
@@ -114,6 +114,12 @@ body {
     opacity: 0.5;
     text-decoration: none;
 }
+
+
+/* .navbar-collapse ul {
+    background: white;
+    color: var(--blue);
+} */
 
 .hero {
     background-image: url('https://ik.imagekit.io/bn1u7wfqt/francisco-venancio-M4Xloxsg0Gw-unsplash_EcL-sOT5H.jpg');
@@ -445,7 +451,7 @@ background: rgba(188,
 }
 
 .portfolio-img {
-    width: 280px !important;
+    width: 220px !important;
 }
 
 .portfolio a.btn-portfolio {
@@ -536,7 +542,7 @@ background: rgba(188,
 }
 
 .team-well {
-    height: 280px !important;
+    height: 300px !important;
 }
 
 .team-role {
@@ -609,7 +615,7 @@ h5.team-name {
 } */
 
 .contact {
-    background-image: url("https://ik.imagekit.io/bn1u7wfqt/thomas-drouault-IBUcu_9vXJc-unsplash_ugu7UEXBs.jpg");
+    background-image: url("https://ik.imagekit.io/bn1u7wfqt/Group__3__mUg-LgI88.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -709,10 +715,15 @@ textarea:focus {}
 }
 
 #footer h5 {
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    /* padding-left: 10px; */
+    /* border-left: 3px solid var(--highlight); */
     padding-bottom: 6px;
     margin-bottom: 20px;
+    color: var(--highlight);
+}
+
+#footer p {
+    font-size: 16px;
 }
 
 #footer a {
