@@ -24,6 +24,14 @@ $(document).ready(function() {
 
     });
 
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1300,
+        easing: 'easeOutQuad',
+        clip: true,
+        speedAsDuration: true
+    });
+
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items: 4,

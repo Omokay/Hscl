@@ -97,18 +97,22 @@ body {
 
 .top-nav.light-header li a.nav-link:hover,
 .top-nav.light-header a.nav-link {
-    color: var(--primary);
-    transition: 0.5s ease-in;
-    -webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
+    color: var(--secondary);
 }
 
 .navbar-toggler .navbar-toggler-icon {
     color: var(--white);
 }
 
-.navbar-toggler-icon .lightup {
+.navbar-toggler .navbar-toggler-icon .lightup {
     color: var(--primary);
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
 }
 
 .hero {
@@ -137,7 +141,7 @@ body {
 }
 
 .hero h2 {
-    font-size: 3.350em;
+    font-size: 3.30em;
     font-style: normal;
     font-weight: 200;
     text-transform: none;
@@ -356,6 +360,10 @@ background: rgba(188,
 
 .pb-100 {
     padding-bottom: 100px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
 }
 
 .pb-10 {
@@ -767,5 +775,37 @@ textarea:focus {}
         border-left: transparent;
         padding-bottom: 0px;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.50em;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 16px;
+        display: none;
+        visibility: hidden;
+    }
+    .hero a.hero-btn {
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        padding: 0 10px;
+        height: 44px;
+        font-size: 14px;
+        letter-spacing: .036em;
+        line-height: 44px;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none !important;
     }
 }
