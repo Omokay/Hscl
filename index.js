@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $('#team1').appendTo("body").modal('show');
+
     AOS.init();
 
     AOS.init({
@@ -49,9 +52,9 @@ $(window).scroll(function() {
 
     if (scroll >= 100) {
         $(".top-nav").addClass("light-header");
-        $(".navbar-toggler-icon").add("lightup");
+        $(".fa fa-bar").add("lightup");
     } else {
         $(".top-nav").removeClass("light-header");
-        $(".navbar-toggler-icon").removeClass("lightup");
+        $(".fa fa-bar").removeClass("lightup");
     }
 });
