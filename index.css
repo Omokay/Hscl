@@ -33,7 +33,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* font-family: 'Merriweather', serif; */
     font-family: 'Lato', sans-serif;
 }
 
@@ -50,7 +49,7 @@ body {
 }
 
 .top-nav .navbar-nav li .nav-link {
-    color: var(--highlight);
+    color: var(--white);
     font-size: 14px;
     padding: 29px 15px;
     font-weight: 200;
@@ -116,10 +115,32 @@ body {
 }
 
 
-/* .navbar-collapse ul {
-    background: white;
-    color: var(--blue);
-} */
+/* Modal Styling */
+
+.modal-dialog p {
+    color: rgb(94, 92, 109);
+}
+
+.modal .modal-dialog {
+    /* max-width: 80%; */
+}
+
+.modal .modal-dialog .modal-title {
+    color: var(--primary);
+}
+
+.modal .modal-dialog .modal-role {
+    color: var(--neutral);
+    font-weight: 700;
+}
+
+.modal .modal-dialog .modal-certs {
+    color: var(--neutral);
+    margin-bottom: 5px !important;
+}
+
+
+/* Hero section */
 
 .hero {
     background-image: url('https://ik.imagekit.io/bn1u7wfqt/francisco-venancio-M4Xloxsg0Gw-unsplash_EcL-sOT5H.jpg');
@@ -229,45 +250,6 @@ h2 span {
     color: #555;
 }
 
-
-/* ABOUT SECTION */
-
-
-/* .page-section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: var(--white);
-    float: left;
-    width: 100%;
-    padding: 5rem 0;
-    position: relative;
-    z-index: 1;
-}
-
-.page-section .intro p {
-    color: var(--nudeblue);
-}
-
-.section-heading .section-heading-lower {
-    font-size: 18px;
-    font-weight: 600;
-    position: relative;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.bg-faded {
-    background-color: var(--primary);
-
-background: rgba(188,
-184,
-247,
-0.8);
-
-}
-*/
-
 .btn-xl {
     font-weight: 500;
     font-size: 0.8rem;
@@ -282,34 +264,8 @@ background: rgba(188,
 
 .btn-xl:hover {
     color: var(--nudeblue);
-    background: var(--blue);
+    background: var(--secondary);
 }
-
-
-/* 
-.intro {
-    position: relative;
-} */
-
-
-/* @media (min-width: 992px) {
-    .intro .intro-img {
-        width: 75%;
-        float: right;
-    }
-    .intro .intro-text {
-        left: 0;
-        width: 60%;
-        margin-top: 3rem;
-        position: absolute;
-    }
-    .intro .intro-text .intro-button {
-        width: 100%;
-        left: 0;
-        position: absolute;
-        bottom: -2rem;
-    }
-} */
 
 .about-section {
     float: left;
@@ -317,6 +273,8 @@ background: rgba(188,
     position: relative;
     z-index: 1;
     background-image: url('https://ik.imagekit.io/bn1u7wfqt/background_Xeh8hxLZ2.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .about-section .row {
@@ -335,14 +293,13 @@ background: rgba(188,
 .about-well {
     /* background: #3540b6; */
     background: var(--highlight);
-    color: #fff;
+    color: var(--secondary);
 }
 
 .abt-subheader {
-    font-size: 1.9em;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--secondary);
 }
 
 
@@ -405,7 +362,6 @@ background: rgba(188,
     text-align: left;
     text-transform: none;
     color: var(--secondary) !important;
-    font-family: 'Merriweather', serif;
 }
 
 .services i.fas {
@@ -548,6 +504,10 @@ background: rgba(188,
 .team-role {
     color: var(--primary) !important;
     font-size: 12px;
+}
+
+.section-team .team-card:hover {
+    cursor: pointer;
 }
 
 
