@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
 
-    var scroll = new SmoothScroll('a[href*="#"]', {
+    var smoothscroll = new SmoothScroll('a[href*="#"]', {
         speed: 1300,
         easing: 'easeOutQuad',
         clip: true,
@@ -44,17 +44,23 @@ $(document).ready(function() {
         autoplayTimeout: 5000,
         autoplayHoverPause: false
     });
-});
 
-// Sticky Header
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
-        $(".top-nav").addClass("light-header");
-        $(".fa fa-bar").add("lightup");
-    } else {
-        $(".top-nav").removeClass("light-header");
-        $(".fa fa-bar").removeClass("lightup");
-    }
+    // Sticky Header
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".top-nav").addClass("light-header");
+            $(".fa fa-bar").add("lightup");
+        } else {
+            $(".top-nav").removeClass("light-header");
+            $(".fa fa-bar").removeClass("lightup");
+        }
+    });
+
+    // Collapse Pane
+    $(window).screen(function() {
+        var screenwidth =
+    });
 });
