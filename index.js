@@ -45,22 +45,17 @@ $(document).ready(function() {
         autoplayHoverPause: false
     });
 
+});
 
-    // Sticky Header
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+// Sticky Header
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
-        if (scroll >= 100) {
-            $(".top-nav").addClass("light-header");
-            $(".fa fa-bar").add("lightup");
-        } else {
-            $(".top-nav").removeClass("light-header");
-            $(".fa fa-bar").removeClass("lightup");
-        }
-    });
-
-    // Collapse Pane
-    $(window).screen(function() {
-        var screenwidth =
-    });
+    if (scroll >= 100) {
+        $(".top-nav").addClass("light-header");
+        $(".fa fa-bar").add("lightup");
+    } else {
+        $(".top-nav").removeClass("light-header");
+        $(".fa fa-bar").removeClass("lightup");
+    }
 });
