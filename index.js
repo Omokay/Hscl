@@ -1,9 +1,12 @@
 $(document).ready(function() {
+    // Hide Collapse pane on link click
+    $('.navbar-collapse a').click(function() {
+        $(".navbar-collapse").collapse('hide');
+    });
 
     $('#team1').appendTo("body").modal('show');
 
     AOS.init();
-
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -28,7 +31,7 @@ $(document).ready(function() {
     });
 
 
-    var scroll = new SmoothScroll('a[href*="#"]', {
+    var smoothscroll = new SmoothScroll('a[href*="#"]', {
         speed: 1300,
         easing: 'easeOutQuad',
         clip: true,
@@ -44,6 +47,7 @@ $(document).ready(function() {
         autoplayTimeout: 5000,
         autoplayHoverPause: false
     });
+
 });
 
 // Sticky Header
