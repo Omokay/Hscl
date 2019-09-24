@@ -1,555 +1,559 @@
-                                   :root {
-                                      --primary: #5394f4;
-                                      --background: #ffffff;
-                                      --subbackground: #f7fafc;
-                                      --neutral: #8384ac;
-                                      --gray: #44485e;
-                                      --highlight: #19e999;
-                                      --light: #ccfae8af;
-                                      --secondary: #0c084c;
-                                      --accent: #ffab00;
-                                      --white: #fff;
-                                      --nudeblue: #e9f0fa;
-                                      --plain: #fafbfd;
-                                  }
-                                  
-                                  .item {
-                                      display: inline-block;
-                                      width: 100px;
-                                      height: 100px;
-                                  }
-                                  
-                                  h1,
-                                  h2,
-                                  h3,
-                                  h4,
-                                  h5,
-                                  h6 {
-                                      font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
-                                  }
-                                  
-                                  html,
-                                  body {
-                                      margin: 0;
-                                      padding: 0;
-                                      width: 100%;
-                                      font-family: 'Lato', sans-serif;
-                                  }
-                                  /* HEADER */
-                                  
-                                  .navbar .navbar-light .bg-light {
-                                      visibility: hidden;
-                                      color: var(--white) !important;
-                                  }
-                                  
-                                  .navbar-light .navbar-nav .active>.nav-link,
-                                  .navbar-light .navbar-nav .nav-link.active,
-                                  .navbar-light .navbar-nav .nav-link.show,
-                                  .navbar-light .navbar-nav .show>.nav-link {
-                                      color: var(--white);
-                                  }
-                                  
-                                  .top-nav {
-                                      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                                      height: 80px;
-                                      margin: 0 auto;
-                                      transition: 0.5s ease-in;
-                                      -webkit-transition: 0.5s ease-in;
-                                      -moz-transition: 0.5s ease-in;
-                                      font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
-                                  }
-                                  
-                                  .top-nav .navbar-nav li .nav-link {
-                                      color: var(--white);
-                                      font-size: 14px;
-                                      padding: 29px 15px;
-                                      font-weight: 200;
-                                      text-transform: uppercase;
-                                      transition: 0.5s ease-in;
-                                      -webkit-transition: 0.5s ease-in;
-                                      -moz-transition: 0.5s ease-in;
-                                      /* letter-spacing: 0.1em; */
-                                  }
-                                  
-                                  .top-nav a.nav-link {
-                                      color: var(--white);
-                                      transition: 0.5s ease-in;
-                                      -webkit-transition: 0.5s ease-in;
-                                      -moz-transition: 0.5s ease-in;
-                                  }
-                                  
-                                  .top-nav li a.nav-link:hover {
-                                      color: var(--primary) !important;
-                                  }
-                                  
-                                  .top-nav .navbar-brand {
-                                      font-size: 20px;
-                                      color: var(--white);
-                                  }
-                                  
-                                  .top-nav.light-header {
-                                      height: 70px;
-                                      background: var(--white);
-                                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
-                                      transition: 0.5s ease-in;
-                                      -webkit-transition: 0.5s ease-in;
-                                      -moz-transition: 0.5s ease-in;
-                                  }
-                                  
-                                  .top-nav.light-header .navbar-brand {
-                                      color: var(--primary);
-                                  }
-                                  
-                                  .top-nav.light-header .navbar-nav li .nav-link {
-                                      color: var(--primary);
-                                      padding: 19px 15px;
-                                      transition: 0.5s ease-in;
-                                      -webkit-transition: 0.5s ease-in;
-                                      -moz-transition: 0.5s ease-in;
-                                  }
-                                  
-                                  .top-nav.light-header li a.nav-link:hover,
-                                  .top-nav.light-header a.nav-link {
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .fa .fa-bars {
-                                      color: var(--white);
-                                  }
-                                  
-                                  .fa .fa-bars .lightup {
-                                      color: var(--primary) !important;
-                                  }
-                                  
-                                  .isDisabled {
-                                      color: currentColor;
-                                      cursor: not-allowed;
-                                      opacity: 0.5;
-                                      text-decoration: none;
-                                  }
-                                  /* Modal Styling */
-                                  
-                                  .modal-dialog p {
-                                      color: rgb(94, 92, 109);
-                                  }
-                                  
-                                  .modal .modal-dialog .modal-title {
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .modal .modal-dialog .modal-role {
-                                      color: var(--primary);
-                                      font-weight: 500;
-                                  }
-                                  
-                                  .modal .modal-dialog .modal-certs {
-                                      color: var(--gray);
-                                      margin-bottom: 5px !important;
-                                  }
-                                  /* Hero section */
-                                  
-                                  .hero {
-                                      background-image: url('https://ik.imagekit.io/bn1u7wfqt/francisco-venancio-M4Xloxsg0Gw-unsplash_EcL-sOT5H.jpg');
-                                      background-size: cover;
-                                      background-attachment: fixed;
-                                      float: left;
-                                      width: 100%;
-                                      display: flex;
-                                      align-items: center;
-                                      height: 100vh;
-                                      position: relative;
-                                      z-index: 1;
-                                      font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
-                                  }
-                                  
-                                  .bg-overlay-light:before {
-                                      content: "";
-                                      background: rgba(4, 14, 51, 0.8);
-                                      position: absolute;
-                                      height: 100%;
-                                      width: 100%;
-                                      left: 0;
-                                      top: 0;
-                                      z-index: -1;
-                                  }
-                                  
-                                  .hero h2 {
-                                      font-size: 3.30em;
-                                      font-style: normal;
-                                      font-weight: 200;
-                                      text-transform: none;
-                                      color: white;
-                                  }
-                                  
-                                  .hero p {
-                                      color: #fff;
-                                      font-size: 16px;
-                                      font-weight: 500;
-                                  }
-                                  
-                                  .hero i.fas {
-                                      width: 200px;
-                                      height: 100px;
-                                      color: var(--gray);
-                                  }
-                                  
-                                  .hero .row .pointer {
-                                      padding-top: 100px;
-                                  }
-                                  
-                                  .hero-btn {
-                                      display: inline-flex;
-                                      -webkit-box-align: center;
-                                      -ms-flex-align: center;
-                                      align-items: center;
-                                      position: relative;
-                                      padding: 0 30px;
-                                      height: 64px;
-                                      font-size: 16px;
-                                      font-weight: 500;
-                                      letter-spacing: .036em;
-                                      line-height: 64px;
-                                      vertical-align: middle;
-                                      text-align: center;
-                                      text-decoration: none !important;
-                                      color: var(--nudeblue);
-                                      cursor: pointer;
-                                      border: 0 solid transparent;
-                                      background: var(--blue);
-                                      -webkit-transition: .5s ease-in;
-                                      transition: .5s ease-in;
-                                  }
-                                  
-                                  .hero-btn:hover {
-                                      background: var(--secondary);
-                                      color: var(--white);
-                                  }
-                                  
-                                  h2 span {
-                                      color: var(--highlight);
-                                  }
-                                  
-                                  .section-team {
-                                      float: left;
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                  }
-                                  
-                                  .social-link {
-                                      width: 30px;
-                                      height: 30px;
-                                      border: 1px solid #ddd;
-                                      display: flex;
-                                      align-items: center;
-                                      justify-content: center;
-                                      color: #666;
-                                      border-radius: 50%;
-                                      transition: all 0.3s;
-                                      font-size: 0.9rem;
-                                  }
-                                  
-                                  .social-link:hover,
-                                  .social-link:focus {
-                                      background: #ddd;
-                                      text-decoration: none;
-                                      color: #555;
-                                  }
-                                  
-                                  .btn-xl {
-                                      font-weight: 500;
-                                      font-size: 0.8rem;
-                                      padding-top: 1.5rem;
-                                      padding: 20px;
-                                      border-radius: 0;
-                                      border: none;
-                                      background: var(--white);
-                                      color: var(--secondary);
-                                      transition: 0.5s ease-in;
-                                  }
-                                  
-                                  .btn-xl:hover {
-                                      color: var(--nudeblue);
-                                      background: var(--secondary);
-                                  }
-                                  
-                                  .about-section {
-                                      float: left;
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                      background-image: url('https://ik.imagekit.io/bn1u7wfqt/background_Xeh8hxLZ2.png');
-                                      background-position: center;
-                                      background-repeat: no-repeat;
-                                  }
-                                  
-                                  .about-section .row {
-                                      color: var(--gray);
-                                  }
-                                  
-                                  .padding-0 {
-                                      padding-left: 0;
-                                      padding-right: 0;
-                                  }
-                                  
-                                  .about-text {
-                                      padding: 20px 50px;
-                                  }
-                                  
-                                  .about-well {
-                                      /* background: #3540b6; */
-                                      background: var(--highlight);
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .abt-subheader {
-                                      font-size: 1.5em;
-                                      font-weight: 600;
-                                      color: var(--secondary);
-                                  }
-                                  /** What we do css */
-                                  
-                                  .pt-100 {
-                                      padding-top: 100px;
-                                  }
-                                  
-                                  .pt-40 {
-                                      padding-top: 40px;
-                                  }
-                                  
-                                  .pt-20 {
-                                      padding-top: 20px;
-                                  }
-                                  
-                                  .pb-20 {
-                                      padding-bottom: 20px;
-                                  }
-                                  
-                                  .pb-100 {
-                                      padding-bottom: 100px;
-                                  }
-                                  
-                                  .pb-50 {
-                                      padding-bottom: 50px;
-                                  }
-                                  
-                                  .pb-10 {
-                                      padding-bottom: 10px;
-                                  }
-                                  
-                                  .mb-100 {
-                                      margin-bottom: 100px;
-                                  }
-                                  
-                                  .mb-10 {
-                                      margin-bottom: 10px;
-                                  }
-                                  
-                                  .services {
-                                      background-color: #f7fafc;
-                                      float: left;
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                  }
-                                  
-                                  .services .single-service p {
-                                      text-align: left !important;
-                                      color: var(--gray);
-                                  }
-                                  
-                                  .services .single-service h5 {
-                                      font-size: 1.0em;
-                                      font-style: normal;
-                                      font-weight: 600;
-                                      letter-spacing: normal;
-                                      text-align: left;
-                                      text-transform: none;
-                                      color: var(--secondary) !important;
-                                  }
-                                  
-                                  .services i.fas {
-                                      color: var(--accent);
-                                      margin-bottom: 10px;
-                                      font-size: 25px;
-                                  }
-                                  
-                                  .services .single-service {
-                                      transition: .5s;
-                                      -webkit-transition: .5s;
-                                      -moz-transition: .5s;
-                                  }
-                                  /* Portfolio Section */
-                                  
-                                  .portfolio {
-                                      float: left;
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                      background: var(--white);
-                                  }
-                                  
-                                  .portfolio strong {
-                                      color: var(--blue) !important;
-                                      font-size: 1.2em;
-                                  }
-                                  
-                                  .portfolio h6 a {
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .portfolio p {
-                                      color: var(--gray) !important;
-                                  }
-                                  
-                                  .portfolio .card {
-                                      border: none !important;
-                                      border-radius: 0 !important;
-                                      height: 250px;
-                                  }
-                                  
-                                  .portfolio-img {
-                                      width: 220px !important;
-                                  }
-                                  
-                                  .portfolio a.btn-portfolio {
-                                      display: inline-flex;
-                                      align-items: center;
-                                      position: relative;
-                                      height: 40px;
-                                      font-size: 0.8rem;
-                                      font-weight: 500;
-                                      letter-spacing: .036em;
-                                      vertical-align: middle;
-                                      text-decoration: none !important;
-                                      color: var(--accent);
-                                      cursor: pointer;
-                                      border-radius: 0 !important;
-                                      -webkit-box-align: center;
-                                      -ms-flex-align: center;
-                                      -webkit-transition: .5s ease-in;
-                                      transition: .5s ease-in;
-                                  }
-                                  
-                                  .portfolio a.btn-portfolio:hover {
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .portfolio a.project-title {
-                                      font-size: 20px !important;
-                                      text-decoration: none;
-                                      font-weight: 500;
-                                  }
-                                  
-                                  .portfolio a.btn-portfolio:hover {
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  .portfolio a.link-projects {
-                                      display: inline-flex;
-                                      -webkit-box-align: center;
-                                      -ms-flex-align: center;
-                                      align-items: center;
-                                      position: relative;
-                                      padding: 0 20px;
-                                      height: 50px;
-                                      font-size: 16px;
-                                      letter-spacing: .036em;
-                                      line-height: 64px;
-                                      vertical-align: middle;
-                                      text-align: center;
-                                      text-decoration: none !important;
-                                      color: var(--white);
-                                      cursor: pointer;
-                                      border: 0 solid transparent;
-                                      background: var(--blue);
-                                      -webkit-transition: .5s ease-in;
-                                      transition: .5s ease-in;
-                                  }
-                                  
-                                  .portfolio a.link-projects:hover {
-                                      background: var(--secondary);
-                                  }
-                                  
-                                  .portfolio a.link-projects .social-card-header {
-                                      position: relative;
-                                      display: -ms-flexbox;
-                                      display: flex;
-                                      -ms-flex-align: center;
-                                      align-items: center;
-                                      -ms-flex-pack: center;
-                                      justify-content: center;
-                                      height: 96px;
-                                  }
-                                  
-                                  .bg-well {
-                                      background: var(--light);
-                                  }
-                                  /* Partner Section */
-                                  
-                                  .partner-section {
-                                      float: left;
-                                      width: 100%;
-                                      position: relative;
-                                      z-index: 1;
-                                  }
-                                  /* CSS for Team section */
-                                  
-                                  .section-team {
-                                      background-color: var(--plain);
-                                  }
-                                  
-                                  .team-well {
-                                      height: 300px !important;
-                                  }
-                                  
-                                  .team-role {
-                                      color: var(--primary) !important;
-                                      font-size: 12px;
-                                  }
-                                  
-                                  .section-team .team-card:hover {
-                                      cursor: pointer;
-                                  }
-                                  /** Css for contact section */
-                                  
-                                  a {
-                                      text-decoration: none;
-                                      color: #333;
-                                      -webkit-transition: .4s;
-                                      transition: .4s;
-                                  }
-                                  
-                                  .section-title {
-                                      position: relative;
-                                  }
-                                  
-                                  .section-title p {
-                                      font-size: 16px;
-                                      margin-bottom: 5px;
-                                      font-weight: 400;
-                                  }
-                                  
-                                  section .section-title {
-                                      text-align: center;
-                                      color: var(--primary);
-                                      text-transform: uppercase;
-                                  }
-                                  
-                                  .section-title h4 {
-                                      font-size: 1.25em;
-                                      font-weight: 700;
-                                      position: relative;
-                                      padding-bottom: 20px;
-                                      display: inline-block;
-                                      letter-spacing: 0.1em;
-                                      color: var(--secondary);
-                                  }
-                                  
-                                  h5.team-name {
-                                      color: var(--secondary) !important;
-                                  }
-                                  /* .section-title h4::before {
+                                        :root {
+                                           --primary: #5394f4;
+                                           --background: #ffffff;
+                                           --subbackground: #f7fafc;
+                                           --neutral: #8384ac;
+                                           --gray: #44485e;
+                                           --highlight: #19e999;
+                                           --light: #ccfae8af;
+                                           --secondary: #0c084c;
+                                           --accent: #ffab00;
+                                           --white: #fff;
+                                           --nudeblue: #e9f0fa;
+                                           --plain: #fafbfd;
+                                       }
+                                       
+                                       .item {
+                                           display: inline-block;
+                                           width: 100px;
+                                           height: 100px;
+                                       }
+                                       
+                                       h1,
+                                       h2,
+                                       h3,
+                                       h4,
+                                       h5,
+                                       h6 {
+                                           font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
+                                       }
+                                       
+                                       html,
+                                       body {
+                                           margin: 0;
+                                           padding: 0;
+                                           font-family: 'Lato', sans-serif;
+                                       }
+                                       /* HEADER */
+                                       
+                                       .navbar .navbar-light .bg-light {
+                                           visibility: hidden;
+                                           color: var(--white) !important;
+                                       }
+                                       
+                                       .navbar-light .navbar-nav .active>.nav-link,
+                                       .navbar-light .navbar-nav .nav-link.active,
+                                       .navbar-light .navbar-nav .nav-link.show,
+                                       .navbar-light .navbar-nav .show>.nav-link {
+                                           color: var(--white);
+                                       }
+                                       
+                                       .top-nav {
+                                           border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                                           height: 80px;
+                                           margin: 0 auto;
+                                           transition: 0.5s ease-in;
+                                           -webkit-transition: 0.5s ease-in;
+                                           -moz-transition: 0.5s ease-in;
+                                           font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
+                                       }
+                                       
+                                       .top-nav .navbar-nav li .nav-link {
+                                           color: var(--white);
+                                           font-size: 14px;
+                                           padding: 29px 15px;
+                                           font-weight: 200;
+                                           text-transform: uppercase;
+                                           transition: 0.5s ease-in;
+                                           -webkit-transition: 0.5s ease-in;
+                                           -moz-transition: 0.5s ease-in;
+                                           /* letter-spacing: 0.1em; */
+                                       }
+                                       
+                                       .top-nav a.nav-link {
+                                           color: var(--white);
+                                           transition: 0.5s ease-in;
+                                           -webkit-transition: 0.5s ease-in;
+                                           -moz-transition: 0.5s ease-in;
+                                       }
+                                       
+                                       .top-nav li a.nav-link:hover {
+                                           color: var(--primary) !important;
+                                       }
+                                       
+                                       .top-nav .navbar-brand {
+                                           font-size: 20px;
+                                           color: var(--white);
+                                       }
+                                       
+                                       .top-nav.light-header {
+                                           height: 70px;
+                                           background: var(--white);
+                                           box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+                                           transition: 0.5s ease-in;
+                                           -webkit-transition: 0.5s ease-in;
+                                           -moz-transition: 0.5s ease-in;
+                                       }
+                                       
+                                       .top-nav.light-header .navbar-brand {
+                                           color: var(--primary);
+                                       }
+                                       
+                                       .top-nav.light-header .navbar-nav li .nav-link {
+                                           color: var(--primary);
+                                           padding: 19px 15px;
+                                           transition: 0.5s ease-in;
+                                           -webkit-transition: 0.5s ease-in;
+                                           -moz-transition: 0.5s ease-in;
+                                       }
+                                       
+                                       .top-nav.light-header li a.nav-link:hover,
+                                       .top-nav.light-header a.nav-link {
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .fa .fa-bars {
+                                           color: var(--white);
+                                       }
+                                       
+                                       .fa .fa-bars .lightup {
+                                           color: var(--primary) !important;
+                                       }
+                                       
+                                       .isDisabled {
+                                           color: currentColor;
+                                           cursor: not-allowed;
+                                           opacity: 0.5;
+                                           text-decoration: none;
+                                       }
+                                       /* Modal Styling */
+                                       
+                                       .modal-dialog p {
+                                           color: rgb(94, 92, 109);
+                                       }
+                                       
+                                       .modal .modal-dialog .modal-title {
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .modal .modal-dialog .modal-role {
+                                           color: var(--primary);
+                                           font-weight: 500;
+                                       }
+                                       
+                                       .modal .modal-dialog .modal-certs {
+                                           color: var(--gray);
+                                           margin-bottom: 5px !important;
+                                       }
+                                       /* Hero section */
+                                       
+                                       .hero {
+                                           background-image: url('https://ik.imagekit.io/bn1u7wfqt/francisco-venancio-M4Xloxsg0Gw-unsplash_EcL-sOT5H.jpg');
+                                           background-size: cover;
+                                           background-attachment: fixed;
+                                           float: left;
+                                           width: 100%;
+                                           display: flex;
+                                           align-items: center;
+                                           height: 100vh;
+                                           position: relative;
+                                           z-index: 1;
+                                           font-family: 'Spectral', Georgia, Times, 'Times New Roman', serif;
+                                       }
+                                       
+                                       .bg-overlay-light:before {
+                                           content: "";
+                                           background: rgba(4, 14, 51, 0.8);
+                                           position: absolute;
+                                           height: 100%;
+                                           width: 100%;
+                                           left: 0;
+                                           top: 0;
+                                           z-index: -1;
+                                       }
+                                       
+                                       .hero h2 {
+                                           font-size: 3.30em;
+                                           font-style: normal;
+                                           font-weight: 200;
+                                           text-transform: none;
+                                           color: white;
+                                       }
+                                       
+                                       .hero p {
+                                           color: #fff;
+                                           font-size: 16px;
+                                           font-weight: 500;
+                                       }
+                                       
+                                       .hero i.fas {
+                                           width: 200px;
+                                           height: 100px;
+                                           color: var(--gray);
+                                       }
+                                       
+                                       .hero .row .pointer {
+                                           padding-top: 100px;
+                                       }
+                                       
+                                       .hero-btn {
+                                           display: inline-flex;
+                                           -webkit-box-align: center;
+                                           -ms-flex-align: center;
+                                           align-items: center;
+                                           position: relative;
+                                           padding: 0 30px;
+                                           height: 64px;
+                                           font-size: 16px;
+                                           font-weight: 500;
+                                           letter-spacing: .036em;
+                                           line-height: 64px;
+                                           vertical-align: middle;
+                                           text-align: center;
+                                           text-decoration: none !important;
+                                           color: var(--nudeblue);
+                                           cursor: pointer;
+                                           border: 0 solid transparent;
+                                           background: var(--blue);
+                                           -webkit-transition: .5s ease-in;
+                                           transition: .5s ease-in;
+                                       }
+                                       
+                                       .hero-btn:hover {
+                                           background: var(--secondary);
+                                           color: var(--white);
+                                       }
+                                       
+                                       h2 span {
+                                           color: var(--highlight);
+                                       }
+                                       
+                                       .section-team {
+                                           float: left;
+                                           width: 100%;
+                                           position: relative;
+                                           z-index: 1;
+                                       }
+                                       
+                                       .social-link {
+                                           width: 30px;
+                                           height: 30px;
+                                           border: 1px solid #ddd;
+                                           display: flex;
+                                           align-items: center;
+                                           justify-content: center;
+                                           color: #666;
+                                           border-radius: 50%;
+                                           transition: all 0.3s;
+                                           font-size: 0.9rem;
+                                       }
+                                       
+                                       .social-link:hover,
+                                       .social-link:focus {
+                                           background: #ddd;
+                                           text-decoration: none;
+                                           color: #555;
+                                       }
+                                       
+                                       .btn-xl {
+                                           font-weight: 500;
+                                           font-size: 0.8rem;
+                                           padding-top: 1.5rem;
+                                           padding: 20px;
+                                           border-radius: 0;
+                                           border: none;
+                                           background: var(--white);
+                                           color: var(--secondary);
+                                           transition: 0.5s ease-in;
+                                       }
+                                       
+                                       .btn-xl:hover {
+                                           color: var(--nudeblue);
+                                           background: var(--secondary);
+                                       }
+                                       
+                                       .about-section {
+                                           float: left;
+                                           width: 100%;
+                                           position: relative;
+                                           z-index: 1;
+                                           background-image: url('https://ik.imagekit.io/bn1u7wfqt/background_Xeh8hxLZ2.png');
+                                           background-position: center;
+                                           background-repeat: no-repeat;
+                                       }
+                                       
+                                       .about-section .row {
+                                           color: var(--gray);
+                                       }
+                                       
+                                       .padding-0 {
+                                           padding-left: 0;
+                                           padding-right: 0;
+                                       }
+                                       
+                                       .about-text {
+                                           padding: 20px 50px;
+                                       }
+                                       
+                                       .about-well {
+                                           /* background: #3540b6; */
+                                           background: var(--highlight);
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .abt-subheader {
+                                           font-size: 1.5em;
+                                           font-weight: 600;
+                                           color: var(--secondary);
+                                       }
+                                       /** What we do css */
+                                       
+                                       .pt-100 {
+                                           padding-top: 100px;
+                                       }
+                                       
+                                       .pt-40 {
+                                           padding-top: 40px;
+                                       }
+                                       
+                                       .pt-20 {
+                                           padding-top: 20px;
+                                       }
+                                       
+                                       .pb-20 {
+                                           padding-bottom: 20px;
+                                       }
+                                       
+                                       .pb-100 {
+                                           padding-bottom: 100px;
+                                       }
+                                       
+                                       .pb-50 {
+                                           padding-bottom: 50px;
+                                       }
+                                       
+                                       .pb-10 {
+                                           padding-bottom: 10px;
+                                       }
+                                       
+                                       .mb-100 {
+                                           margin-bottom: 100px;
+                                       }
+                                       
+                                       .mb-10 {
+                                           margin-bottom: 10px;
+                                       }
+                                       
+                                       .services {
+                                           background-color: #f7fafc;
+                                           float: left;
+                                           width: 100%;
+                                           position: relative;
+                                           z-index: 1;
+                                       }
+                                       
+                                       .services .single-service p {
+                                           text-align: left !important;
+                                           color: var(--gray);
+                                       }
+                                       
+                                       .services .single-service h5 {
+                                           font-size: 1.0em;
+                                           font-style: normal;
+                                           font-weight: 600;
+                                           letter-spacing: normal;
+                                           text-align: left;
+                                           text-transform: none;
+                                           color: var(--secondary) !important;
+                                       }
+                                       
+                                       .services i.fas {
+                                           color: var(--accent);
+                                           margin-bottom: 10px;
+                                           font-size: 25px;
+                                       }
+                                       
+                                       .services .single-service {
+                                           transition: .5s;
+                                           -webkit-transition: .5s;
+                                           -moz-transition: .5s;
+                                       }
+                                       /* Portfolio Section */
+                                       
+                                       .portfolio {
+                                           float: left;
+                                           width: 100%;
+                                           position: relative;
+                                           z-index: 1;
+                                           background: var(--white);
+                                       }
+                                       
+                                       .portfolio strong {
+                                           color: var(--blue) !important;
+                                           font-size: 1.2em;
+                                       }
+                                       
+                                       .portfolio h6 a {
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .portfolio p {
+                                           color: var(--gray) !important;
+                                       }
+                                       
+                                       .portfolio .card {
+                                           border: none !important;
+                                           border-radius: 0 !important;
+                                           height: 250px;
+                                       }
+                                       
+                                       .portfolio-img {
+                                           width: 220px !important;
+                                       }
+                                       
+                                       .portfolio a.btn-portfolio {
+                                           display: inline-flex;
+                                           align-items: center;
+                                           position: relative;
+                                           height: 40px;
+                                           font-size: 0.8rem;
+                                           font-weight: 500;
+                                           letter-spacing: .036em;
+                                           vertical-align: middle;
+                                           text-decoration: none !important;
+                                           color: var(--accent);
+                                           cursor: pointer;
+                                           border-radius: 0 !important;
+                                           -webkit-box-align: center;
+                                           -ms-flex-align: center;
+                                           -webkit-transition: .5s ease-in;
+                                           transition: .5s ease-in;
+                                       }
+                                       
+                                       .portfolio a.btn-portfolio:hover {
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .portfolio a.project-title {
+                                           font-size: 20px !important;
+                                           text-decoration: none;
+                                           font-weight: 500;
+                                       }
+                                       
+                                       .portfolio a.btn-portfolio:hover {
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       .portfolio a.link-projects {
+                                           display: inline-flex;
+                                           -webkit-box-align: center;
+                                           -ms-flex-align: center;
+                                           align-items: center;
+                                           position: relative;
+                                           padding: 0 20px;
+                                           height: 50px;
+                                           font-size: 16px;
+                                           letter-spacing: .036em;
+                                           line-height: 64px;
+                                           vertical-align: middle;
+                                           text-align: center;
+                                           text-decoration: none !important;
+                                           color: var(--white);
+                                           cursor: pointer;
+                                           border: 0 solid transparent;
+                                           background: var(--blue);
+                                           -webkit-transition: .5s ease-in;
+                                           transition: .5s ease-in;
+                                       }
+                                       
+                                       .portfolio a.link-projects:hover {
+                                           background: var(--secondary);
+                                       }
+                                       
+                                       .portfolio a.link-projects .social-card-header {
+                                           position: relative;
+                                           display: -ms-flexbox;
+                                           display: flex;
+                                           -ms-flex-align: center;
+                                           align-items: center;
+                                           -ms-flex-pack: center;
+                                           justify-content: center;
+                                           height: 96px;
+                                       }
+                                       
+                                       .bg-well {
+                                           background: var(--light);
+                                       }
+                                       /* Partner Section */
+                                       
+                                       .partner-section {
+                                           float: left;
+                                           width: 100%;
+                                           position: relative;
+                                           z-index: 1;
+                                       }
+                                       
+                                       .partner-section .item {
+                                           width: 120px;
+                                           height: 120px;
+                                       }
+                                       /* CSS for Team section */
+                                       
+                                       .section-team {
+                                           background-color: var(--plain);
+                                       }
+                                       
+                                       .team-well {
+                                           height: 300px !important;
+                                       }
+                                       
+                                       .team-role {
+                                           color: var(--primary) !important;
+                                           font-size: 12px;
+                                       }
+                                       
+                                       .section-team .team-card:hover {
+                                           cursor: pointer;
+                                       }
+                                       /** Css for contact section */
+                                       
+                                       a {
+                                           text-decoration: none;
+                                           color: #333;
+                                           -webkit-transition: .4s;
+                                           transition: .4s;
+                                       }
+                                       
+                                       .section-title {
+                                           position: relative;
+                                       }
+                                       
+                                       .section-title p {
+                                           font-size: 16px;
+                                           margin-bottom: 5px;
+                                           font-weight: 400;
+                                       }
+                                       
+                                       section .section-title {
+                                           text-align: center;
+                                           color: var(--primary);
+                                           text-transform: uppercase;
+                                       }
+                                       
+                                       .section-title h4 {
+                                           font-size: 1.25em;
+                                           font-weight: 700;
+                                           position: relative;
+                                           padding-bottom: 20px;
+                                           display: inline-block;
+                                           letter-spacing: 0.1em;
+                                           color: var(--secondary);
+                                       }
+                                       
+                                       h5.team-name {
+                                           color: var(--secondary) !important;
+                                       }
+                                       /* .section-title h4::before {
 position: absolute;
 content: "";
 width: 80px;
@@ -571,212 +575,212 @@ bottom: 0;
 left: 50%;
 margin-left: -25px;
 } */
-                                  
-                                  .contact {
-                                      background-image: url("https://ik.imagekit.io/bn1u7wfqt/Group__3__mUg-LgI88.png");
-                                      background-size: cover;
-                                      background-position: center;
-                                      background-attachment: fixed;
-                                      position: relative;
-                                      z-index: 1;
-                                      float: left;
-                                      width: 100%;
-                                      color: #fff;
-                                  }
-                                  
-                                  .contact .section-title h4 {
-                                      color: var(--white);
-                                  }
-                                  
-                                  .contact-form input,
-                                  textarea {
-                                      width: 100%;
-                                      border: 1px solid rgb(244, 243, 247);
-                                      padding: 5px 10px;
-                                      margin-top: 15px;
-                                      background-color: transparent;
-                                      color: #fff;
-                                  }
-                                  
-                                  .contact:before {
-                                      position: absolute;
-                                      content: "";
-                                      width: 100%;
-                                      height: 100%;
-                                      left: 0;
-                                      top: 0;
-                                      background-color: rgba(6, 1, 53, 0.8);
-                                      z-index: -1;
-                                      opacity: 0.8;
-                                      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-                                  }
-                                  
-                                  .single-contact {
-                                      text-align: left;
-                                      position: relative;
-                                      padding-left: 70px;
-                                      margin-bottom: 50px;
-                                      margin-top: 10px;
-                                  }
-                                  
-                                  .single-contact i.fa {
-                                      position: absolute;
-                                      left: 0;
-                                      top: 50%;
-                                      -webkit-transform: translateY(-50%);
-                                      transform: translateY(-50%);
-                                      background-color: var(--highlight);
-                                      width: 40px;
-                                      height: 40px;
-                                      line-height: 40px;
-                                      text-align: center;
-                                      border-radius: 3px;
-                                  }
-                                  
-                                  .single-contact h5 {
-                                      font-size: 18px;
-                                      margin-bottom: 10px;
-                                      font-weight: 500;
-                                  }
-                                  
-                                  .single-contact p {
-                                      font-size: 15px;
-                                      font-weight: 400;
-                                  }
-                                  
-                                  .contact-form input[type="submit"] {
-                                      background-color: var(--highlight);
-                                      border: 0px;
-                                      cursor: pointer;
-                                      font-size: 16px;
-                                      -webkit-transition: .4s;
-                                      transition: .4s
-                                  }
-                                  
-                                  .contact-form input[type="submit"]:hover {
-                                      background-color: #17aa72;
-                                  }
-                                  /* Footer */
-                                  
-                                  #footer {
-                                      position: relative;
-                                      z-index: 1;
-                                      float: left;
-                                      width: 100%;
-                                      color: var(--nudeblue);
-                                      background: #0c084c !important;
-                                  }
-                                  
-                                  #footer h5 {
-                                      /* padding-left: 10px; */
-                                      /* border-left: 3px solid var(--highlight); */
-                                      padding-bottom: 6px;
-                                      margin-bottom: 20px;
-                                      color: var(--highlight);
-                                  }
-                                  
-                                  #footer p {
-                                      font-size: 16px;
-                                  }
-                                  
-                                  #footer a {
-                                      text-decoration: none !important;
-                                      background-color: transparent;
-                                      -webkit-text-decoration-skip: objects;
-                                      color: var(--nudeblue);
-                                  }
-                                  
-                                  #footer ul.social li {
-                                      padding: 3px 0;
-                                  }
-                                  
-                                  #footer ul.social li a i {
-                                      margin-right: 5px;
-                                      font-size: 25px;
-                                      -webkit-transition: .5s all ease;
-                                      -moz-transition: .5s all ease;
-                                      transition: .5s all ease;
-                                  }
-                                  
-                                  #footer ul.social li:hover a i {
-                                      font-size: 30px;
-                                      margin-top: -10px;
-                                  }
-                                  
-                                  #footer ul.social li a,
-                                  #footer ul.quick-links li a {
-                                      color: var(--nudeblue);
-                                  }
-                                  
-                                  #footer ul.social li a:hover {
-                                      color: var(--white);
-                                  }
-                                  
-                                  #footer ul.quick-links li {
-                                      padding: 3px 0;
-                                      -webkit-transition: .5s all ease;
-                                      -moz-transition: .5s all ease;
-                                      transition: .5s all ease;
-                                  }
-                                  
-                                  #footer ul.quick-links li:hover {
-                                      padding: 3px 0;
-                                      margin-left: 5px;
-                                      font-weight: 700;
-                                  }
-                                  
-                                  #footer ul.quick-links li a i {
-                                      margin-right: 5px;
-                                  }
-                                  
-                                  #footer ul.quick-links li:hover a i {
-                                      font-weight: 700;
-                                  }
-                                  /* MEDIA QUERIES */
-                                  /* NAV ITEMS DISAPPEARS AT THIS RESOLUTION */
-                                  
-                                  @media (max-width:767px) {
-                                      #footer h5 {
-                                          padding-left: 0;
-                                          border-left: transparent;
-                                          padding-bottom: 0px;
-                                          margin-bottom: 10px;
-                                      }
-                                  }
-                                  
-                                  @media (max-width: 992px) {
-                                      .hero h2 {
-                                          font-size: 2.50em;
-                                      }
-                                      .navbar .navbar-collapse .navbar-nav a.nav-link {
-                                          color: var(--primary) !important;
-                                      }
-                                      .collapse {
-                                          background-color: var(--white);
-                                      }
-                                      @media (max-width: 600px) {
-                                          .hero h2 {
-                                              font-size: 1.8em;
-                                          }
-                                          .hero p {
-                                              font-size: 16px;
-                                              display: none;
-                                              visibility: hidden;
-                                          }
-                                          .hero a.hero-btn {
-                                              display: inline-flex;
-                                              -webkit-box-align: center;
-                                              -ms-flex-align: center;
-                                              align-items: center;
-                                              position: relative;
-                                              padding: 0 10px;
-                                              height: 44px;
-                                              font-size: 14px;
-                                              letter-spacing: .036em;
-                                              line-height: 44px;
-                                              vertical-align: middle;
-                                              text-align: center;
-                                              text-decoration: none !important;
-                                          }
-                                      }
-                                  }
+                                       
+                                       .contact {
+                                           background-image: url("https://ik.imagekit.io/bn1u7wfqt/Group__3__mUg-LgI88.png");
+                                           background-size: cover;
+                                           background-position: center;
+                                           background-attachment: fixed;
+                                           position: relative;
+                                           z-index: 1;
+                                           float: left;
+                                           width: 100%;
+                                           color: #fff;
+                                       }
+                                       
+                                       .contact .section-title h4 {
+                                           color: var(--white);
+                                       }
+                                       
+                                       .contact-form input,
+                                       textarea {
+                                           width: 100%;
+                                           border: 1px solid rgb(244, 243, 247);
+                                           padding: 5px 10px;
+                                           margin-top: 15px;
+                                           background-color: transparent;
+                                           color: #fff;
+                                       }
+                                       
+                                       .contact:before {
+                                           position: absolute;
+                                           content: "";
+                                           width: 100%;
+                                           height: 100%;
+                                           left: 0;
+                                           top: 0;
+                                           background-color: rgba(6, 1, 53, 0.8);
+                                           z-index: -1;
+                                           opacity: 0.8;
+                                           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+                                       }
+                                       
+                                       .single-contact {
+                                           text-align: left;
+                                           position: relative;
+                                           padding-left: 70px;
+                                           margin-bottom: 50px;
+                                           margin-top: 10px;
+                                       }
+                                       
+                                       .single-contact i.fa {
+                                           position: absolute;
+                                           left: 0;
+                                           top: 50%;
+                                           -webkit-transform: translateY(-50%);
+                                           transform: translateY(-50%);
+                                           background-color: var(--highlight);
+                                           width: 40px;
+                                           height: 40px;
+                                           line-height: 40px;
+                                           text-align: center;
+                                           border-radius: 3px;
+                                       }
+                                       
+                                       .single-contact h5 {
+                                           font-size: 18px;
+                                           margin-bottom: 10px;
+                                           font-weight: 500;
+                                       }
+                                       
+                                       .single-contact p {
+                                           font-size: 15px;
+                                           font-weight: 400;
+                                       }
+                                       
+                                       .contact-form input[type="submit"] {
+                                           background-color: var(--highlight);
+                                           border: 0px;
+                                           cursor: pointer;
+                                           font-size: 16px;
+                                           -webkit-transition: .4s;
+                                           transition: .4s
+                                       }
+                                       
+                                       .contact-form input[type="submit"]:hover {
+                                           background-color: #17aa72;
+                                       }
+                                       /* Footer */
+                                       
+                                       #footer {
+                                           position: relative;
+                                           z-index: 1;
+                                           float: left;
+                                           width: 100%;
+                                           color: var(--nudeblue);
+                                           background: #0c084c !important;
+                                       }
+                                       
+                                       #footer h5 {
+                                           /* padding-left: 10px; */
+                                           /* border-left: 3px solid var(--highlight); */
+                                           padding-bottom: 6px;
+                                           margin-bottom: 20px;
+                                           color: var(--highlight);
+                                       }
+                                       
+                                       #footer p {
+                                           font-size: 16px;
+                                       }
+                                       
+                                       #footer a {
+                                           text-decoration: none !important;
+                                           background-color: transparent;
+                                           -webkit-text-decoration-skip: objects;
+                                           color: var(--nudeblue);
+                                       }
+                                       
+                                       #footer ul.social li {
+                                           padding: 3px 0;
+                                       }
+                                       
+                                       #footer ul.social li a i {
+                                           margin-right: 5px;
+                                           font-size: 25px;
+                                           -webkit-transition: .5s all ease;
+                                           -moz-transition: .5s all ease;
+                                           transition: .5s all ease;
+                                       }
+                                       
+                                       #footer ul.social li:hover a i {
+                                           font-size: 30px;
+                                           margin-top: -10px;
+                                       }
+                                       
+                                       #footer ul.social li a,
+                                       #footer ul.quick-links li a {
+                                           color: var(--nudeblue);
+                                       }
+                                       
+                                       #footer ul.social li a:hover {
+                                           color: var(--white);
+                                       }
+                                       
+                                       #footer ul.quick-links li {
+                                           padding: 3px 0;
+                                           -webkit-transition: .5s all ease;
+                                           -moz-transition: .5s all ease;
+                                           transition: .5s all ease;
+                                       }
+                                       
+                                       #footer ul.quick-links li:hover {
+                                           padding: 3px 0;
+                                           margin-left: 5px;
+                                           font-weight: 700;
+                                       }
+                                       
+                                       #footer ul.quick-links li a i {
+                                           margin-right: 5px;
+                                       }
+                                       
+                                       #footer ul.quick-links li:hover a i {
+                                           font-weight: 700;
+                                       }
+                                       /* MEDIA QUERIES */
+                                       /* NAV ITEMS DISAPPEARS AT THIS RESOLUTION */
+                                       
+                                       @media (max-width:767px) {
+                                           #footer h5 {
+                                               padding-left: 0;
+                                               border-left: transparent;
+                                               padding-bottom: 0px;
+                                               margin-bottom: 10px;
+                                           }
+                                       }
+                                       
+                                       @media (max-width: 992px) {
+                                           .hero h2 {
+                                               font-size: 2.50em;
+                                           }
+                                           .navbar .navbar-collapse .navbar-nav a.nav-link {
+                                               color: var(--primary) !important;
+                                           }
+                                           .collapse {
+                                               background-color: var(--white);
+                                           }
+                                           @media (max-width: 600px) {
+                                               .hero h2 {
+                                                   font-size: 1.8em;
+                                               }
+                                               .hero p {
+                                                   font-size: 16px;
+                                                   display: none;
+                                                   visibility: hidden;
+                                               }
+                                               .hero a.hero-btn {
+                                                   display: inline-flex;
+                                                   -webkit-box-align: center;
+                                                   -ms-flex-align: center;
+                                                   align-items: center;
+                                                   position: relative;
+                                                   padding: 0 10px;
+                                                   height: 44px;
+                                                   font-size: 14px;
+                                                   letter-spacing: .036em;
+                                                   line-height: 44px;
+                                                   vertical-align: middle;
+                                                   text-align: center;
+                                                   text-decoration: none !important;
+                                               }
+                                           }
+                                       }

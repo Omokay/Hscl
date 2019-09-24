@@ -6,7 +6,6 @@ $(document).ready(function() {
 
     $('#team1').appendTo("body").modal('show');
 
-    AOS.init();
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -27,7 +26,6 @@ $(document).ready(function() {
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
     });
 
 
@@ -44,8 +42,32 @@ $(document).ready(function() {
         loop: true,
         margin: 20,
         autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: false
+        autoplayTimeout: 4000,
+        autoplayHoverPause: false,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true
+            },
+            400: {
+                items: 3,
+                nav: false
+            },
+            600: {
+                items: 4,
+                nav: false
+            },
+            900: {
+                items: 5,
+                nav: true,
+                loop: false
+            },
+            990: {
+                items: 6,
+                nav: true,
+                loop: false
+            }
+        }
     });
 
 });
