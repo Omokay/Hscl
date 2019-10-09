@@ -61,6 +61,47 @@
             </div>
         </nav>
     </header>
+    <!-- MODAL FOR PROJECT -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body" style="padding: 5%">
+                    <div class="container modal-proj">
+                        <h3 class="client-name text-center">Adam Smith International</h3>
+                        <h3 class="project-title">ENDLINE EVALUATION OF THE mVACCINATION PILOT PROJECT</h3>
+                        <h4>Overview</h3>
+                            <p class="project-overview">Immunisation of children against vaccine-preventable diseases is a key strategy that has been used over the years to improve the health indices of countries. As part of efforts to improve immunization services in Nigeria, Adam
+                                Smith International in partnership with Vodafone, GSK and the National Primary Health Care Development Agency implemented the pilot of the mVacciNation mobile application in 48 primary Health Care Centers (PHCs) across
+                                2 LGAs in Kaduna South and Zaria LGAs for a period of 18 months. HSCL conducted an end line evaluation of the pilot project to independently assessed whether the Nigeria mVacciNation project achieved its expected results</p>
+                            <h4>Project Goal</h4>
+                            <p class="project-goal">
+                                To assess whether the mVacciNation Nigeria pilot project has achieved its objectives of improving data efficiency, stock management and safety; and enhanced health-seeking behaviour of caregivers
+                            </p>
+                            <h4>Project Objectives</h4>
+                            <ul class="project-objectives">
+                                <li>Determine end-line values for contextual outcome and impact level performance indicators as outlined in the project results framework</li>
+                                <li>Collect routine immunization data on data efficiency, stock management, and health-seeking behaviour</li>
+                                <li>Identify successes and constraints in each of the 5 projects pillars</li>
+                                <li>Assess stakeholder and beneficiary satisfaction with service provided by mVacciNation</li>
+                                <li>Document lessons learned from project implementation</li>
+                                <li>Identify recommendations for mVacciNation Nigeria on scalability and sustainability based on findings</li>
+
+                            </ul>
+
+                            <p></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section>
         <div class="container-fluid aboutus">
@@ -101,7 +142,7 @@
                                     </h6>
                                     <p class="card-text mb-auto">
                                     </p>
-                                    <a class="btn-portfolio" href="#">Learn more</a>
+                                    <a class="btn-portfolio" href="#" data-toggle="modal" data-target="#modal1">Learn more</a>
                                 </div>
 
                             </div>
@@ -455,6 +496,9 @@
             </div>
         </div>
     </section>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
