@@ -3,7 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 
-// ROUTES
+// POST ROUTES
+router.post('/contact', (req, res) => {
+    res.send(req.body);
+});
+// GET ROUTES
 router.get('/', (req, res) => {
     res.render('index');
 });
@@ -29,6 +33,7 @@ router.all('*', (req, res) => res.status(404)
         status: 404,
         error: 'Page not found',
     }));
+
 
 
 

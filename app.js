@@ -1,4 +1,5 @@
 const express = require('express');
+const parser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const routes = require('./server/routes/routes.js');
@@ -9,11 +10,15 @@ let app = express();
 app.use(cors());
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-
 app.use(express.static(__dirname + '/public'));
+
+// allows access to body of the request
+app.use(parser.urlencoded({ extended: false }));
+app.use(parser.json());
 
 //Routes
 app.use('/', routes);
+
 // All non-existent routes
 app.all('*', (req, res) => res.status(404)
     .send({
