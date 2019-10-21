@@ -1,13 +1,11 @@
 const express = require('express');
 const parser = require('body-parser');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
-const routes = require('./server/routes/routes.js');
+const routes = require('./server/routes/routes');
+const ejs = require('ejs');
+
 
 let app = express();
 
-
-app.use(cors());
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));

@@ -90,3 +90,9 @@ $(window).scroll(function() {
         $(".fa fa-bar").removeClass("lightup");
     }
 });
+
+//Clear input fields onclick submit
+function submitForm() {
+    $('form[name="contact-form"]').submit();
+    $('input, textarea').val('');
+}

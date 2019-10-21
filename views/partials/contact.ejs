@@ -9,24 +9,24 @@
         </div>
         <div class="row text-center ">
             <div class="col-md-8 ">
-                <form method="POST" action="contact" class="contact-form">
+                <form method="POST" action="/contact" class="contact-form">
                     <div class="form-group">
                         <div class="row ">
                             <div class="col-xl-6 ">
-                                <input type="text" name="name" placeholder="name ">
+                                <input type="text" class="form-control" name="name" placeholder="name ">
                             </div>
                             <div class="col-xl-6 ">
-                                <input type="email" name="email" placeholder="email ">
+                                <input type="email" class="form-control" name="email" placeholder="email ">
                             </div>
                             <div class="col-xl-6 ">
-                                <input type="text" name="subject" placeholder="subject ">
+                                <input type="text" class="form-control" name="subject" placeholder="subject ">
                             </div>
                             <div class="col-xl-6 ">
-                                <input type="text" name="telephone" placeholder="telephone ">
+                                <input type="text" class="form-control" name="telephone" placeholder="telephone ">
                             </div>
                             <div class="col-xl-12 ">
                                 <textarea name="message" placeholder="message" cols="30 " rows="10 "></textarea>
-                                <input type="submit" value="send message ">
+                                <input type="submit" onclick="submitForm()" value="send message">
                             </div>
                         </div>
                     </div>
