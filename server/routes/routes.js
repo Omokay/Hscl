@@ -1,9 +1,14 @@
 'use strict';
 const express = require('express');
-const router = express.Router();
+let router = express.Router();
 const ejs = require('ejs');
-const app = express();
+const nodemailer = require('nodemailer');
 
+let app = express();
+
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'));
 
 // GET ROUTES
 router.get('/', (req, res, next) => {
@@ -25,35 +30,33 @@ router.get('/careers', (req, res, next) => {
     res.render('careers');
 });
 
+router.get('/contact', (req, res, next) => {
+    res.render('contact', { info: req.body });
+});
 
 // POST ROUTES
 router.post('/contact', (req, res, next) => {
 
     async function main() {
-        let email = `
-        <p>req.body.name<p/>
-        // <h3>Contact Details</h3>
-        // <ul>
-        //     <li>
-        //         <%= req.body.name %>
-        //     </li>
-        //     <li>
-        //         <%= req.body.email %>
-        //     </li>
-        //     <li>
-        //         <%= req.body.subject %>
-        //     </li>
-        //     <li>
-        //         <%= telephone %>
-        //     </li>
-        // </ul>
-        // <h3>Message</h3>
-        // <p><%= message %></p>
-    `;
+        let name = req.body.name;
+        let email = req.body.email;
+        let subject = req.body.subject;
+        let telephone = req.body.telephone;
+        let message = req.body.message;
 
-        console.log(req.body.email);
 
-        const nodemailer = require('nodemailer');
+        let emailTemplate = `
+            <h3>Contact Details</h3>
+           <ul>
+           <li><strong>NAME: ` + name + `</strong></li>
+           <li><strong>EMAIL: ` + email + `</strong></li>
+           <li><strong>TELEPHONE: ` + telephone + `</strong></li>
+           <li><strong>SUBJECT: ` + subject + `</strong></li>
+           </ul>
+            <h3>Message</h3>
+            <p>` + message + `</p>
+        `;
+
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
             host: 'smtpout.secureserver.net',
@@ -74,14 +77,11 @@ router.post('/contact', (req, res, next) => {
             to: 'chuku.omoke@gmail.com', // list of receivers
             subject: 'ENQUIRY', // Subject line
             text: '', // plain text body
-            html: email
+            html: emailTemplate
         });
         console.log('Message sent: %s', info.messageId);
-
     }
     main().catch(console.error);
-
-
 });
 
 // all non-existent routes
@@ -90,8 +90,6 @@ router.all('*', (req, res, next) => res.status(404)
         status: 404,
         error: 'Page not found',
     }));
-
-
 
 
 module.exports = router;
