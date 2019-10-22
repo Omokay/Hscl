@@ -1,14 +1,12 @@
 'use strict';
 const express = require('express');
 let router = express.Router();
-const ejs = require('ejs');
 const nodemailer = require('nodemailer');
+const ejs = require('ejs');
 
-let app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.use(express.static(__dirname + '/public'));
+
+require('dotenv').config();
 
 // GET ROUTES
 router.get('/', (req, res, next) => {
@@ -56,6 +54,7 @@ router.post('/contact', (req, res, next) => {
             <h3>Message</h3>
             <p>` + message + `</p>
         `;
+        console.log(name);
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
@@ -63,8 +62,8 @@ router.post('/contact', (req, res, next) => {
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
-                user: 'dchukwu@hscgroup.org',
-                pass: 'Deltaforce12'
+                user: process.env.HIDDEN_EMAIL,
+                pass: process.env.HIDDEN_PASSWORD
             },
             tls: {
                 rejectUnauthorized: false
