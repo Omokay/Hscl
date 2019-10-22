@@ -4,6 +4,7 @@ const routes = require('./server/routes/routes');
 const nodemailer = require('nodemailer');
 
 
+
 require('dotenv').config();
 
 
@@ -16,6 +17,7 @@ app.use(express.static(__dirname + '/public'));
 // allows access to body of the request
 app.use(parser.urlencoded({ extended: false }));
 app.use(parser.json());
+
 
 //Routes
 app.use('/', routes);

@@ -3,6 +3,8 @@ const express = require('express');
 let router = express.Router();
 const nodemailer = require('nodemailer');
 const ejs = require('ejs');
+const { check, validationResult } = require('express-validator');
+const validate = require('../middlewares/validate');
 
 
 
@@ -33,8 +35,14 @@ router.get('/contact', (req, res, next) => {
 });
 
 // POST ROUTES
-router.post('/contact', (req, res, next) => {
+router.post('/contact', validate, (req, res, next) => {
 
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(422).json({
+            errors: errors.array()
+        });
+    }
     async function main() {
         let name = req.body.name;
         let email = req.body.email;
@@ -44,16 +52,16 @@ router.post('/contact', (req, res, next) => {
 
 
         let emailTemplate = `
-            <h3>Contact Details</h3>
-           <ul>
-           <li><strong>NAME: ` + name + `</strong></li>
-           <li><strong>EMAIL: ` + email + `</strong></li>
-           <li><strong>TELEPHONE: ` + telephone + `</strong></li>
-           <li><strong>SUBJECT: ` + subject + `</strong></li>
-           </ul>
-            <h3>Message</h3>
-            <p>` + message + `</p>
-        `;
+                    <h3>Contact Details</h3>
+                <ul>
+                <li><strong>NAME: ` + name + `</strong></li>
+                <li><strong>EMAIL: ` + email + `</strong></li>
+                <li><strong>TELEPHONE: ` + telephone + `</strong></li>
+                <li><strong>SUBJECT: ` + subject + `</strong></li>
+                </ul>
+                    <h3>Message</h3>
+                    <p>` + message + `</p>
+                `;
         console.log(name);
 
         // create reusable transporter object using the default SMTP transport
