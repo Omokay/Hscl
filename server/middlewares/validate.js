@@ -27,15 +27,15 @@ const validator = [
 
     check('telephone')
     .isEmpty()
-    .isNumeric()
-    .matches(/^(?:\d{8}(?:\d{2}(?:\d{2})?)?|\(\+?\d{2,3}\)\s?(?:\d{4}[\s*.-]?\d{4}|\d{3}[\s*.-]?\d{3}|\d{2}([\s*.-]?)\d{2}\1\d{2}(?:\1\d{2})?))$/),
+    .isMobilePhone(),
 
     check('message')
     .not().isEmpty()
     .withMessage('Message cannot be empty')
     .trim()
-    .isLength({ min: 10, max: 500 })
-    .withMessage('Message body should be between 20 to 500 characters')
+    .escape()
+    .isLength({ min: 10, max: 300 })
+    .withMessage('Message body should be between 20 to 300 characters')
     .isAlphanumeric(),
 
 ];
