@@ -30,10 +30,6 @@ router.get('/careers', (req, res, next) => {
     res.render('careers');
 });
 
-router.get('/contact', (req, res, next) => {
-    res.render('contact', { info: req.body });
-});
-
 // POST ROUTES
 router.post('/contact', validate, (req, res, next) => {
 
@@ -52,7 +48,7 @@ router.post('/contact', validate, (req, res, next) => {
 
 
         let emailTemplate = `
-                    <h3>Contact Details</h3>
+                <h3>Contact Details</h3>
                 <ul>
                 <li><strong>NAME: ` + name + `</strong></li>
                 <li><strong>EMAIL: ` + email + `</strong></li>
@@ -62,11 +58,10 @@ router.post('/contact', validate, (req, res, next) => {
                     <h3>Message</h3>
                     <p>` + message + `</p>
                 `;
-        console.log(name);
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: 'smtpout.secureserver.net',
+            host: process.env.HIDDEN_HOST,
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {

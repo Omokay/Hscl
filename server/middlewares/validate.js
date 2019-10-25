@@ -3,40 +3,36 @@ const { check, validationResult } = require('express-validator');
 const validator = [
 
     check('name')
-    .not().isEmpty()
-    .withMessage('Your name is required')
+    .matches(/^[a-zA-Z ]*$/)
+    .withMessage('Must start with a letter and have no characters')
     .trim()
-    .isLength({ min: 3, max: 30 }).withMessage('Name should be between 3 to 30 characters')
-    .isAlpha()
-    .withMessage('Name should contain alphabets only'),
+    .escape()
+    .isLength({ min: 3, max: 50 })
+    .withMessage('Name cannot be less than 3 alphabets'),
 
     check('email')
     .not().isEmpty()
-    .withMessage('Email is required')
     .trim()
-    .isEmail().withMessage('Invalid Email Address')
+    .isEmail()
+    .withMessage('Must be a valid email address')
     .customSanitizer(email => email.toLowerCase()),
 
     check('subject')
+    .matches(/^[a-zA-Z0-9 ]*$/)
     .not().isEmpty()
-    .withMessage('Message Subject is required')
     .trim()
-    .isLength({ min: 3, max: 50 })
-    .isAlphanumeric()
-    .withMessage('Message body should be between 3 to 50 characters'),
+    .escape()
+    .isLength({ min: 3, max: 50 }),
 
     check('telephone')
-    .isEmpty()
-    .isMobilePhone(),
+    .matches(/(([+][(]?[0-9]{1,3}[)]?)|([(]?[0-9]{4}[)]?))\s*[)]?[-\s\.]?[(]?[0-9]{1,3}[)]?([-\s\.]?[0-9]{3})([-\s\.]?[0-9]{3,4})/g)
+    .withMessage('Must be a valid phone number'),
 
     check('message')
     .not().isEmpty()
-    .withMessage('Message cannot be empty')
-    .trim()
     .escape()
-    .isLength({ min: 10, max: 300 })
-    .withMessage('Message body should be between 20 to 300 characters')
-    .isAlphanumeric(),
+    .trim()
+    .isLength({ min: 5, max: 500 }),
 
 ];
 
