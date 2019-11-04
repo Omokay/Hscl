@@ -84,6 +84,7 @@ router.post('/contact', validate, (req, res, next) => {
         console.log('Message sent: %s', info.messageId);
     }
     main().catch(console.error);
+    res.status(204).send();
 });
 
 // all non-existent routes
