@@ -80,10 +80,16 @@ router.post('/contact', validate, (req, res, next) => {
             subject: 'ENQUIRY', // Subject line
             text: '', // plain text body
             html: emailTemplate
+
         });
+
+        res.render('contact', { msg: 'Your message has been sent' });
         console.log('Message sent: %s', info.messageId);
+
     }
+
     main().catch(console.error);
+
     res.status(204).send();
 });
 
